@@ -34,7 +34,7 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[300px]">
 
                     {/* Bio Card - Large */}
-                    <BentoCard className="md:col-span-2 lg:col-span-2 row-span-1 md:row-span-2">
+                    <BentoCard className="md:col-span-2 lg:col-span-2 row-span-1 overflow-y-auto md:overflow-hidden md:row-span-2">
                         <div>
                             <span className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
                                 <Code2 size={24} />

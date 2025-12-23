@@ -86,11 +86,11 @@ const Projects = () => {
         },
         {
             index: 3,
-            name: "Portfolio V1",
-            description: "The previous iteration of my personal portfolio, showcasing my growth and early experiments in web design.",
-            image: "/Images/3.jpg", // Keeping original placeholder if not changed by user, but path structure updated
-            technologies: ["React", "Tailwind", "Framer"],
-            link: "#"
+            name: "Crypto Price Tracker",
+            description: "A real-time cryptocurrency price tracking application that monitors digital asset prices and provides up-to-date market information.",
+            image: "/Images/Crypto_Price_Tracker.png",
+            technologies: ["Next.js", "Tailwind", "Chart.js", "Binance API", "TradingView API", "Coingecko API"],
+            link: "https://crypto-price-tracker-three-dusky.vercel.app/"
         }
     ];
 
