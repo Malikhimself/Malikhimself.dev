@@ -15,8 +15,18 @@ export function ThemeProvider({ children, defaultTheme = "system", storageKey = 
             const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
                 : "light";
+
             root.classList.add(systemTheme);
-            return;
+
+            const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+            const handleChange = () => {
+                const newSystemTheme = mediaQuery.matches ? "dark" : "light";
+                root.classList.remove("light", "dark");
+                root.classList.add(newSystemTheme);
+            };
+
+            mediaQuery.addEventListener("change", handleChange);
+            return () => mediaQuery.removeEventListener("change", handleChange);
         }
 
         root.classList.add(theme);
