@@ -24,19 +24,19 @@ const Footer = () => {
                         <div>
                             <h4 className="font-mono text-sm text-foreground mb-6 uppercase tracking-wider">Socials</h4>
                             <ul className="flex flex-col gap-4">
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Instagram</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Twitter (X)</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Dribbble</a></li>
+                                <li><a href="https://www.instagram.com/bisiriyuabdulmalik?igsh=MWUzOW4xeDVjb2dhag%3D%3D&utm_source=qr" className="text-muted-foreground hover:text-primary transition-colors">Instagram</a></li>
+                                <li><a href="https://x.com/malik_himself?s=21" className="text-muted-foreground hover:text-primary transition-colors">Twitter (X)</a></li>
+                                <li><a href="https://www.linkedin.com/in/abdulmalik-bisiriyu-6639662a3/" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a></li>
+                                {/* <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Dribbble</a></li> */}
                             </ul>
                         </div>
                         <div>
                             <h4 className="font-mono text-sm text-foreground mb-6 uppercase tracking-wider">Sitemap</h4>
                             <ul className="flex flex-col gap-4">
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Work</a></li>
-                                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
+                                <li><a href="#hero" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
+                                <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
+                                <li><a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">Work</a></li>
+                                <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
                             </ul>
                         </div>
                     </div>
