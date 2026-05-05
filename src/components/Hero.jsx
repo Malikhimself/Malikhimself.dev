@@ -38,7 +38,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed"
                     >
-                        I am <span className="text-foreground font-medium">Abdulmalik Bisiriyu</span>. A UI Designer and Frontend Developer obsessed with animations, clean code, and intuitive user interfaces.
+                        I am <span className="text-foreground font-medium">Abdulmalik Bisiriyu</span>. A Frontend Developer obsessed with animations, clean code, and intuitive user interfaces.
                     </motion.p>
 
                     <motion.div
@@ -70,17 +70,29 @@ const Hero = () => {
                     >
                         <div className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                             <Github size={24} />
+                            <a 
+                                href="https://github.com/Malikhimself"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                             <div className="text-left">
                                 <p className="text-sm font-mono">GITHUB</p>
                                 <p className="text-xs text-muted-foreground">View Source</p>
                             </div>
+                            </a>
                         </div>
                         <div className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                             <Linkedin size={24} />
-                            <div className="text-left">
-                                <p className="text-sm font-mono">LINKEDIN</p>
-                                <p className="text-xs text-muted-foreground">Connect</p>
-                            </div>
+                            <a 
+                                href="https://linkedin.com/in/abdulmalik-bisiriyu-6639662a3"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div className="text-left">
+                                    <p className="text-sm font-mono">LINKEDIN</p>
+                                    <p className="text-xs text-muted-foreground">Connect</p>
+                                </div>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
