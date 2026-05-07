@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Download } from 'lucide-react';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import ResumePDF from './ResumePDF';
 
 const Hero = () => {
     return (
@@ -53,12 +55,17 @@ const Hero = () => {
                         >
                             View Work <ArrowRight size={20} />
                         </a>
-                        <a
-                            href="#"
+                        <PDFDownloadLink
+                            document={<ResumePDF />}
+                            fileName="Abdulmalik_Bisiriyu_Resume.pdf"
                             className="bg-secondary/50 border border-border hover:bg-secondary text-foreground font-medium px-8 py-3.5 rounded-full flex items-center gap-2 transition-all duration-300"
                         >
-                            Resume <Download size={20} />
-                        </a>
+                            {({ blob, url, loading, error }) => (
+                                <>
+                                    {loading ? 'Loading PDF...' : 'Resume'} <Download size={20} />
+                                </>
+                            )}
+                        </PDFDownloadLink>
                     </motion.div>
 
                     {/* Social Stats */}
